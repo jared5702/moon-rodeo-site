@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Moon Rodeo | Earth underfoot. Moon overhead.</title>
+  <meta name="description" content="Moon Rodeo is a sparkling water with a little wild, a little otherworldly streak.">
+  <meta name="theme-color" content="#F3E5C5">
+  <script>
+    document.documentElement.classList.add('js');
+    try { if (sessionStorage.getItem('mr-intro')) document.documentElement.classList.add('intro-seen'); sessionStorage.setItem('mr-intro', '1'); } catch (e) {}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fraunces 900 at opsz 72, SOFT 70, WONK 1; Oswald 600; DM Sans 400/500/700.
+       Dev convenience only: self-host licensed WOFF2 files (and keep the OFL files) for production. -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght,SOFT,WONK@72,900,70,1&family=Oswald:wght@600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Shared icons -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow-right" viewBox="0 0 48 24"><path d="M0 12h44M33 1l11 11-11 11" fill="none" stroke="currentColor" stroke-width="3"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 48"><path d="M12 0v44M1 33l11 11 11-11" fill="none" stroke="currentColor" stroke-width="3"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Intro splash (JS + motion only; purely decorative) -->
+  <div class="intro" aria-hidden="true">
+    <span class="intro__label">Moon<br>Rodeo</span>
+  </div>
+
+  <!-- Fixed chrome: menu button top-left, text brand stamp bottom-left (ju.st pattern) -->
+  <header class="chrome">
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span class="menu-btn__bars" aria-hidden="true"></span>
+    </button>
+    <a class="stamp" href="#top" aria-label="Moon Rodeo, back to top">
+      <span aria-hidden="true">Moon<br>Rodeo</span>
+    </a>
+  </header>
+
+  <!-- Full-screen menu -->
+  <div class="menu" id="menu" hidden>
+    <nav class="menu__inner" aria-label="Primary">
+      <ul class="menu__list">
+        <li><a href="#flavors">Flavors <svg class="menu__arrow" aria-hidden="true"><use href="#i-arrow-down"/></svg></a></li>
+        <li><a href="#story">Story <svg class="menu__arrow" aria-hidden="true"><use href="#i-arrow-down"/></svg></a></li>
+        <li><a href="#faq">FAQ <svg class="menu__arrow" aria-hidden="true"><use href="#i-arrow-down"/></svg></a></li>
+        <li><a href="#signup">Stay in orbit <svg class="menu__arrow" aria-hidden="true"><use href="#i-arrow-down"/></svg></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ Slide stack ============
+         Each .slide is sticky, so the next one slides up over it while scrolling.
+         To add real photography, replace a .slide__placeholder with:
+         <picture class="slide__media">
+           <source media="(max-width: 767px)" srcset="assets/img/mr-home-01-mobile.avif" type="image/avif">
+           <source srcset="assets/img/mr-home-01-desktop.avif" type="image/avif">
+           <img src="assets/img/mr-home-01-desktop.jpg" width="2880" height="1800" alt="…">
+         </picture> -->
+    <div class="stack" id="top">
+
+      <section class="slide slide--hero" aria-labelledby="hero-title">
+        <div class="slide__placeholder" role="img" aria-label="Placeholder for hero photograph">
+          <p class="ph-tag"><strong>Placeholder · Shot 1</strong>Product on a terracotta plinth beside a cratered cream moon prop.</p>
+        </div>
+        <div class="slide__grid">
+          <p class="slide__intro">Sparkling water with a little wild, a little otherworldly streak.</p>
+          <h1 class="slide__title" id="hero-title">
+            <a href="#story">Earth underfoot.<br> Moon overhead.<svg class="arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </h1>
+        </div>
+      </section>
+
+      <section class="slide slide--lemon" id="flavors" aria-labelledby="f1">
+        <div class="slide__placeholder" role="img" aria-label="Placeholder for Lunar Lemon photograph">
+          <p class="ph-tag"><strong>Placeholder · Flavor 01</strong>Lunar Lemon can on worn wood, side light, one lemon half.</p>
+        </div>
+        <div class="slide__grid">
+          <p class="slide__intro"><span class="badge">Concept name</span> Lemon direction · 01 / 05</p>
+          <h2 class="slide__title" id="f1">Lunar Lemon</h2>
+        </div>
+      </section>
+
+      <section class="slide slide--lime" id="cosmic-lime" aria-labelledby="f2">
+        <div class="slide__placeholder" role="img" aria-label="Placeholder for Cosmic Lime photograph">
+          <p class="ph-tag"><strong>Placeholder · Flavor 02</strong>Cosmic Lime can among sunlit cactus ribs.</p>
+        </div>
+        <div class="slide__grid">
+          <p class="slide__intro"><span class="badge">Concept name</span> Lime direction · 02 / 05</p>
+          <h2 class="slide__title" id="f2">Cosmic Lime</h2>
+        </div>
+      </section>
+
+      <section class="slide slide--grapefruit" id="high-desert-grapefruit" aria-labelledby="f3">
+        <div class="slide__placeholder" role="img" aria-label="Placeholder for High Desert Grapefruit photograph">
+          <p class="ph-tag"><strong>Placeholder · Flavor 03</strong>High Desert Grapefruit can on compacted dirt, late-day light.</p>
+        </div>
+        <div class="slide__grid">
+          <p class="slide__intro"><span class="badge">Concept name</span> Grapefruit direction · 03 / 05</p>
+          <h2 class="slide__title" id="f3">High Desert Grapefruit</h2>
+        </div>
+      </section>
+
+      <section class="slide slide--plain" id="stardust-unflavored" aria-labelledby="f4">
+        <div class="slide__placeholder" role="img" aria-label="Placeholder for Stardust Unflavored photograph">
+          <p class="ph-tag"><strong>Placeholder · Flavor 04</strong>Stardust Unflavored can at night, navy sky, warm direct flash.</p>
+        </div>
+        <div class="slide__grid">
+          <p class="slide__intro"><span class="badge">Concept name</span> Unflavored direction · 04 / 05</p>
+          <h2 class="slide__title" id="f4">Stardust Unflavored</h2>
+        </div>
+      </section>
+
+      <section class="slide slide--cherry" id="space-cherry" aria-labelledby="f5">
+        <div class="slide__placeholder" role="img" aria-label="Placeholder for Space Cherry photograph">
+          <p class="ph-tag"><strong>Placeholder · Flavor 05</strong>Space Cherry can against scratched copper with a reflected light pool.</p>
+        </div>
+        <div class="slide__grid">
+          <p class="slide__intro"><span class="badge">Concept name</span> Cherry direction · 05 / 05</p>
+          <h2 class="slide__title" id="f5">Space Cherry</h2>
+        </div>
+      </section>
+
+      <section class="slide slide--story" id="story" aria-labelledby="story-title">
+        <div class="slide__placeholder" role="img" aria-label="Placeholder for landscape photograph">
+          <p class="ph-tag"><strong>Placeholder · Shot 4</strong>Low desert horizon with generous empty sky.</p>
+        </div>
+        <div class="slide__grid">
+          <p class="slide__intro">Warm paper, dark ink, desert dirt, worn wood, copper, cactus, clay. And a moon with a suspicious number of holes in it. <em>Placeholder story copy.</em></p>
+          <h2 class="slide__title" id="story-title">Out here. Way out there.</h2>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============ Statement link (hover reveals an image) ============ -->
+    <section class="statement" aria-label="Launch news">
+      <div class="statement__bg" aria-hidden="true">
+        <div class="slide__placeholder">
+          <p class="ph-tag"><strong>Placeholder · Shot 2</strong>Hands and sparkling water around a worn outdoor wooden table.</p>
+        </div>
+      </div>
+      <div class="wrap">
+        <p class="statement__text">
+          Want the first <a class="statement__link" href="#signup">cold can<svg class="arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></a> when it lands?
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq-section" id="faq" aria-labelledby="faq-title">
+      <div class="wrap faq-grid">
+        <div class="stack-md">
+          <p class="overline">Questions</p>
+          <h2 id="faq-title">Good to know.</h2>
+          <p class="lead">Most details aren't final yet, so we're saying so instead of guessing.</p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Where can I buy Moon Rodeo?</summary>
+            <div class="faq__answer"><p>Retail and online details haven't been announced. <a class="link" href="#signup">Join the list</a> and you'll be first to hear.</p></div>
+          </details>
+          <details>
+            <summary>What flavors are there?</summary>
+            <div class="faq__answer"><p>The current concept lineup is Lunar Lemon, Cosmic Lime, High Desert Grapefruit, Stardust Unflavored, and Space Cherry. It may change before launch.</p></div>
+          </details>
+          <details>
+            <summary>Where are the ingredients and nutrition facts?</summary>
+            <div class="faq__answer"><p>They'll be published once the lineup is final. Until then, nothing on this page should be read as a product claim.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Email capture ============ -->
+    <section class="signup" id="signup" aria-labelledby="signup-title">
+      <div class="wrap signup__grid">
+        <div class="signup__art" role="img" aria-label="Placeholder for newsletter illustration">
+          <p class="ph-tag"><strong>Illustration placeholder</strong>Etched line drawing: envelope or saddlebag with a moon rising out of it.</p>
+        </div>
+
+        <div class="signup__form-col">
+          <h2 id="signup-title">Join the conversation.</h2>
+
+          <form class="form" id="signup-form" novalidate>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input class="input" id="email" name="email" type="email" autocomplete="email" inputmode="email" aria-describedby="email-help email-error">
+              <p class="helper" id="email-help">We'll only use it for Moon Rodeo news.</p>
+              <p class="error-text" id="email-error" hidden></p>
+            </div>
+
+            <div class="field">
+              <label class="check" for="consent">
+                <input type="checkbox" id="consent" name="consent" aria-describedby="consent-error">
+                <span>Yes, send me Moon Rodeo emails. I can unsubscribe at any time.</span>
+              </label>
+              <p class="error-text" id="consent-error" hidden></p>
+            </div>
+
+            <div>
+              <button class="btn btn--primary" type="submit" id="signup-submit">Subscribe <svg class="arrow" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+            </div>
+
+            <div class="form-status" id="signup-status" role="status" aria-live="polite" hidden></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="wrap footer__cols">
+        <nav aria-labelledby="fh-flavors">
+          <h2 id="fh-flavors">Flavors</h2>
+          <ul>
+            <li><a href="#flavors">Lunar Lemon</a></li>
+            <li><a href="#cosmic-lime">Cosmic Lime</a></li>
+            <li><a href="#high-desert-grapefruit">High Desert Grapefruit</a></li>
+            <li><a href="#stardust-unflavored">Stardust Unflavored</a></li>
+            <li><a href="#space-cherry">Space Cherry</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="fh-learn">
+          <h2 id="fh-learn">Learn</h2>
+          <ul>
+            <li><a href="#story">Story</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <nav aria-labelledby="fh-news">
+          <h2 id="fh-news">Stay in orbit</h2>
+          <ul>
+            <li><a href="#signup">Email signup</a></li>
+          </ul>
+        </nav>
+        <!-- Social links go here once the accounts exist (see ASSETS.md). -->
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="wrap">
+        <p class="footer__sign" aria-hidden="true">Stay hydrated, cowboy.</p>
+        <p class="footer__legal">&copy; 2026 Moon Rodeo. Images, flavor names, and copy on this page are placeholders.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

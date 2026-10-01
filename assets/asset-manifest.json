@@ -1,0 +1,305 @@
+{
+  "version": 1,
+  "workflow": "shared-folder; no automatic agent messaging",
+  "next_asset": "home-02-lemon",
+  "assets": [
+    {
+      "id": "wordmark-refinement-1",
+      "path": "assets/incoming/mr-brand-wordmark-option-1-v01.png",
+      "status": "review",
+      "placement": "primary wordmark candidate",
+      "format": "transparent PNG",
+      "source": "wordmark-refinements/option-1.png"
+    },
+    {
+      "id": "wordmark-refinement-2",
+      "path": "assets/incoming/mr-brand-wordmark-option-2-v01.png",
+      "status": "review",
+      "placement": "primary wordmark candidate",
+      "format": "transparent PNG",
+      "source": "wordmark-refinements/option-2.png"
+    },
+    {
+      "id": "wordmark-refinement-3",
+      "path": "assets/incoming/mr-brand-wordmark-option-3-v01.png",
+      "status": "review",
+      "placement": "primary wordmark candidate",
+      "format": "transparent PNG",
+      "source": "wordmark-refinements/option-3.png"
+    },
+    {
+      "id": "brand-star",
+      "path": "assets/incoming/mr-brand-star-black-v01.png",
+      "status": "review",
+      "placement": "decorative brand ornament",
+      "format": "transparent PNG",
+      "source": "brand-assets/moon-rodeo-star.png"
+    },
+    {
+      "id": "home-01-hero-desktop",
+      "status": "superseded",
+      "width": 2880,
+      "height": 1800,
+      "nativeSize": {
+        "width": 1586,
+        "height": 992
+      },
+      "resampled": true,
+      "focalPoint": {
+        "x": 0.73,
+        "y": 0.48
+      },
+      "paths": {
+        "png": "assets/incoming/mr-home-01-hero-desktop-v01.png",
+        "avif": "assets/incoming/mr-home-01-hero-desktop-v01.avif",
+        "webp": "assets/incoming/mr-home-01-hero-desktop-v01.webp",
+        "jpg": "assets/incoming/mr-home-01-hero-desktop-v01.jpg"
+      },
+      "bytes": {
+        "avif": 249188,
+        "webp": 480818,
+        "jpg": 603089
+      },
+      "alt": "An astronaut wearing a cowboy hat approaches a wooden Moon Rodeo gate on the lunar surface, with Earth in the sky. The sign reads Hydration Required."
+    },
+    {
+      "id": "home-01-hero-mobile",
+      "status": "superseded",
+      "width": 1080,
+      "height": 1920,
+      "nativeSize": {
+        "width": 941,
+        "height": 1672
+      },
+      "resampled": true,
+      "focalPoint": {
+        "x": 0.57,
+        "y": 0.41
+      },
+      "paths": {
+        "png": "assets/incoming/mr-home-01-hero-mobile-v01.png",
+        "avif": "assets/incoming/mr-home-01-hero-mobile-v01.avif",
+        "webp": "assets/incoming/mr-home-01-hero-mobile-v01.webp",
+        "jpg": "assets/incoming/mr-home-01-hero-mobile-v01.jpg"
+      },
+      "bytes": {
+        "avif": 133200,
+        "webp": 252822,
+        "jpg": 288874
+      },
+      "alt": "An astronaut wearing a cowboy hat approaches a wooden Moon Rodeo gate on the lunar surface, with Earth in the sky. The sign reads Hydration Required."
+    },
+    {
+      "id": "home-01-hero-illustrated-desktop",
+      "status": "superseded",
+      "width": 2880,
+      "height": 1800,
+      "nativeSize": {
+        "width": 1586,
+        "height": 992
+      },
+      "resampled": true,
+      "focalPoint": {
+        "x": 0.73,
+        "y": 0.48
+      },
+      "paths": {
+        "png": "assets/incoming/mr-home-01-hero-desktop-illustrated-v02.png",
+        "avif": "assets/incoming/mr-home-01-hero-desktop-illustrated-v02.avif",
+        "webp": "assets/incoming/mr-home-01-hero-desktop-illustrated-v02.webp",
+        "jpg": "assets/incoming/mr-home-01-hero-desktop-illustrated-v02.jpg"
+      },
+      "bytes": {
+        "avif": 322759,
+        "webp": 1026772,
+        "jpg": 1106794
+      },
+      "alt": "An etched illustration of an astronaut wearing a cowboy hat approaches a wooden Moon Rodeo gate on the lunar surface, with Earth in the sky. The sign reads Hydration Required."
+    },
+    {
+      "id": "home-01-hero-illustrated-mobile",
+      "status": "superseded",
+      "width": 1080,
+      "height": 1920,
+      "nativeSize": {
+        "width": 941,
+        "height": 1672
+      },
+      "resampled": true,
+      "focalPoint": {
+        "x": 0.57,
+        "y": 0.41
+      },
+      "paths": {
+        "png": "assets/incoming/mr-home-01-hero-mobile-illustrated-v02.png",
+        "avif": "assets/incoming/mr-home-01-hero-mobile-illustrated-v02.avif",
+        "webp": "assets/incoming/mr-home-01-hero-mobile-illustrated-v02.webp",
+        "jpg": "assets/incoming/mr-home-01-hero-mobile-illustrated-v02.jpg"
+      },
+      "bytes": {
+        "avif": 190422,
+        "webp": 387990,
+        "jpg": 403819
+      },
+      "alt": "An etched illustration of an astronaut wearing a cowboy hat approaches a wooden Moon Rodeo gate on the lunar surface, with Earth in the sky. The sign reads Hydration Required."
+    },
+    {
+      "id": "home-01-hero-analogous-desktop",
+      "status": "approved",
+      "width": 2880,
+      "height": 1800,
+      "nativeSize": {
+        "width": 1586,
+        "height": 992
+      },
+      "resampled": true,
+      "focalPoint": {
+        "x": 0.73,
+        "y": 0.48
+      },
+      "paths": {
+        "png": "assets/incoming/mr-home-01-hero-desktop-analogous-v03.png",
+        "avif": "assets/incoming/mr-home-01-hero-desktop-analogous-v03.avif",
+        "webp": "assets/incoming/mr-home-01-hero-desktop-analogous-v03.webp",
+        "jpg": "assets/incoming/mr-home-01-hero-desktop-analogous-v03.jpg"
+      },
+      "bytes": {
+        "avif": 333078,
+        "webp": 889790,
+        "jpg": 1030229
+      },
+      "alt": "An etched illustration of an astronaut wearing a cowboy hat approaches a wooden Moon Rodeo gate on the lunar surface, with Earth in the sky. The sign reads Hydration Required."
+    },
+    {
+      "id": "home-01-hero-analogous-mobile",
+      "status": "approved",
+      "width": 1080,
+      "height": 1920,
+      "nativeSize": {
+        "width": 941,
+        "height": 1672
+      },
+      "resampled": true,
+      "focalPoint": {
+        "x": 0.57,
+        "y": 0.41
+      },
+      "paths": {
+        "png": "assets/incoming/mr-home-01-hero-mobile-analogous-v03.png",
+        "avif": "assets/incoming/mr-home-01-hero-mobile-analogous-v03.avif",
+        "webp": "assets/incoming/mr-home-01-hero-mobile-analogous-v03.webp",
+        "jpg": "assets/incoming/mr-home-01-hero-mobile-analogous-v03.jpg"
+      },
+      "bytes": {
+        "avif": 178630,
+        "webp": 391456,
+        "jpg": 416984
+      },
+      "alt": "An etched illustration of an astronaut wearing a cowboy hat approaches a wooden Moon Rodeo gate on the lunar surface, with Earth in the sky. The sign reads Hydration Required."
+    },
+    {
+      "id": "can-lemon",
+      "status": "integrated",
+      "path": "assets/products/mr-can-lemon-front-v01.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "alt": "Moon Rodeo lemon sparkling water can",
+      "note": "Generated product mockup using supplied logo as visual reference; logo is not an exact SVG composite."
+    },
+    {
+      "id": "can-lime",
+      "status": "integrated",
+      "path": "assets/products/mr-can-lime-front-v01.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "alt": "Moon Rodeo lime sparkling water can",
+      "note": "Generated product mockup using supplied logo as visual reference; logo is not an exact SVG composite."
+    },
+    {
+      "id": "can-grapefruit",
+      "status": "integrated",
+      "path": "assets/products/mr-can-grapefruit-front-v01.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "alt": "Moon Rodeo grapefruit sparkling water can",
+      "note": "Generated product mockup using supplied logo as visual reference; logo is not an exact SVG composite."
+    },
+    {
+      "id": "can-unflavored",
+      "status": "integrated",
+      "path": "assets/products/mr-can-unflavored-front-v01.png",
+      "width": 971,
+      "height": 1619,
+      "transparent": true,
+      "alt": "Moon Rodeo unflavored sparkling water can",
+      "note": "Generated product mockup using supplied logo as visual reference; logo is not an exact SVG composite."
+    },
+    {
+      "id": "can-cherry",
+      "status": "integrated",
+      "path": "assets/products/mr-can-cherry-front-v01.png",
+      "width": 941,
+      "height": 1672,
+      "transparent": true,
+      "alt": "Moon Rodeo cherry sparkling water can",
+      "note": "Generated product mockup using supplied logo as visual reference; logo is not an exact SVG composite."
+    },
+    {
+      "id": "home-01-hero-cool-nosign-desktop",
+      "status": "integrated",
+      "width": 2880,
+      "height": 1800,
+      "nativeSize": {
+        "width": 1586,
+        "height": 992
+      },
+      "resampled": true,
+      "focalPoint": {
+        "x": 0.73,
+        "y": 0.48
+      },
+      "paths": {
+        "png": "assets/img/mr-home-01-hero-desktop-cool-nosign-v05.png",
+        "avif": "assets/img/mr-home-01-hero-desktop-cool-nosign-v05.avif",
+        "webp": "assets/img/mr-home-01-hero-desktop-cool-nosign-v05.webp",
+        "jpg": "assets/img/mr-home-01-hero-desktop-cool-nosign-v05.jpg"
+      },
+      "bytes": {
+        "avif": 348528,
+        "webp": 709548,
+        "jpg": 810025
+      },
+      "alt": "An etched illustration of an astronaut wearing a cowboy hat approaches a wooden Moon Rodeo gate on the lunar surface, with Earth in the sky. White stars and faint pink clouds accent a cool gray sky. His hands are empty and the gate has no sign."
+    },
+    {
+      "id": "home-01-hero-cool-nosign-mobile",
+      "status": "integrated",
+      "width": 1080,
+      "height": 1920,
+      "nativeSize": {
+        "width": 941,
+        "height": 1672
+      },
+      "resampled": true,
+      "focalPoint": {
+        "x": 0.57,
+        "y": 0.41
+      },
+      "paths": {
+        "png": "assets/img/mr-home-01-hero-mobile-cool-nosign-v05.png",
+        "avif": "assets/img/mr-home-01-hero-mobile-cool-nosign-v05.avif",
+        "webp": "assets/img/mr-home-01-hero-mobile-cool-nosign-v05.webp",
+        "jpg": "assets/img/mr-home-01-hero-mobile-cool-nosign-v05.jpg"
+      },
+      "bytes": {
+        "avif": 185905,
+        "webp": 413198,
+        "jpg": 431577
+      },
+      "alt": "An etched illustration of an astronaut wearing a cowboy hat approaches a wooden Moon Rodeo gate on the lunar surface, with Earth in the sky. White stars and faint pink clouds accent a cool gray sky. His hands are empty and the gate has no sign."
+    }
+  ]
+}

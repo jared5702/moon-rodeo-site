@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asset review</title>
+<!-- Local review aid: lists everything in assets/asset-manifest.json. Not part of the site. -->
+<style>
+  body { margin: 0; padding: 24px; background: #F3E5C5; color: #151815; font: 16px/1.5 system-ui, sans-serif; }
+  h1 { margin: 0 0 16px; font-size: 24px; }
+  .grid { display: grid; gap: 24px; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+  figure { margin: 0; border: 2px solid #151815; background: #FFF8E9; }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; }
+  .pair div { display: grid; place-items: center; padding: 16px; aspect-ratio: 4 / 3; }
+  .pair .dark { background: #151815; }
+  .pair .dark img { filter: invert(93%) sepia(12%) saturate(500%) hue-rotate(5deg); }
+  img { max-width: 100%; max-height: 100%; }
+  figcaption { padding: 8px 12px; border-top: 2px solid #151815; font-size: 14px; }
+  .status { display: inline-block; padding: 2px 8px; border: 2px solid currentColor; font-weight: 700; text-transform: uppercase; font-size: 12px; }
+  .approved { color: #183D32; }
+  .review { color: #9C2936; }
+</style>
+</head>
+<body>
+<h1>Moon Rodeo asset review</h1>
+<div class="grid" id="grid"></div>
+<script>
+fetch('assets/asset-manifest.json', { cache: 'no-store' }).then(r => r.json()).then(m => {
+  document.getElementById('grid').innerHTML = m.assets.map(a => `
+    <figure>
+      <div class="pair">
+        <div><img src="${a.path}" alt=""></div>
+        <div class="dark"><img src="${a.path}" alt=""></div>
+      </div>
+      <figcaption>
+        <span class="status ${a.status}">${a.status}</span> <strong>${a.id}</strong><br>
+        ${a.placement} · ${a.format}<br><code>${a.path}</code>
+      </figcaption>
+    </figure>`).join('');
+});
+</script>
+</body>
+</html>
